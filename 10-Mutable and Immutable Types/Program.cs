@@ -29,8 +29,15 @@ class Program
 
         // Immutable example
         ImmutablePerson person2 = new ImmutablePerson("Bob", 25);
+        Console.WriteLine($"ImmutablePerson before updated: \nName: {person2.Name} , Age: {person2.Age}");
+
         // person2.Age = 26; // Compiler error - immutable type
+
         ImmutablePerson newPerson = new ImmutablePerson(person2.Name, 26); // Creating a new instance with the desired change
+
+        person2 = newPerson; // update reference to point at new object
+
+        Console.WriteLine($"ImmutablePerson after updated: \nName: {person2.Name} , Age: {person2.Age}");
 
 
         Console.ReadKey();
