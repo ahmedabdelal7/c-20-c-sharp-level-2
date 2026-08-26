@@ -1,5 +1,12 @@
 ﻿using System;
 
+/*
+    In C#, method descriptions are typically added using XML comments,
+    which are special comments that provide information about the code and can be used to generate documentation.
+    Here's an example of how you can add descriptions to methods in C# using XML comments: 
+*/
+
+
 /// <summary>
 /// This class is a simple calculator.
 /// </summary>
